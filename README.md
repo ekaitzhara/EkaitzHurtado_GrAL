@@ -6,7 +6,7 @@ Ekaitz Hurtadoren "Fog-in-the-loop aplikazioak garatzeko eta hedatzeko teknologi
 
   - Bi aplikazioen Dockerfile fitxategiak.
   - Bi aplikazioen programazio-kodea.
-  - Osagai anitzezko kontenedorea sortzeko docker-compose.yml fitxategia.
+  - Osagai anitzeko kontenedorea sortzeko docker-compose.yml fitxategia.
   - Bi aplikazioak Docker kontenedore bihurtzeko liburutegiak instalatzeko fitxategiak.
   - "YAML" karpetan, Kubernetes klusterrean hedatzeko fitxategi guztiak daude.
   
@@ -15,7 +15,7 @@ Ekaitz Hurtadoren "Fog-in-the-loop aplikazioak garatzeko eta hedatzeko teknologi
   - AppToPut (EXistManagerren bertsio sinplea) aplikazioa kontenedore batera bihurtzeko Dockerfile fitxategia.
   - AppToPut aplikazioaren programazio-kodea.
   - ApptoPut aplikazioaren JAR fitxategia (normala eta ingurune-aldagaiak erabiltzen dituena)
-  - Osagai anitzezko kontenedorea sortzeko docker-compose.yml fitxategia.
+  - Osagai anitzeko kontenedorea sortzeko docker-compose.yml fitxategia.
   - Igo egingo den argazkiaren fitxategia, SVG motakoa.
   - "YAML" karpetan, Kubernetes klusterrean hedatzeko fitxategi guztiak daude.
   
