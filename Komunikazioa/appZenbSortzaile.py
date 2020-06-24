@@ -19,7 +19,7 @@ def zenbakiaBidali():
         headers = {'Content-Type': 'application/json'}
         params = {'zenbakia': randomNum}
         # Ingurune-aldagaien balioak lortu
-        url = 'http://'+ os.environ.get('APPBATUKETA_SERVICE_HOST') +':'+ os.environ.get('APPBATUKETA_SERVICE_PORT') (@\label{inguruneAldagaiak}@)
+        url = 'http://'+ os.environ.get('APPBATUKETA_SERVICE_HOST') +':'+ os.environ.get('APPBATUKETA_SERVICE_PORT')
         # POST motako HTTP mezua bidali	
         r = requests.post(url, headers=headers, data=json.dumps(params))
         if(r.status_code != 200):
