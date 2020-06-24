@@ -1,0 +1,16 @@
+FROM python:alpine3.7
+
+WORKDIR /home/pi/appZenbSortzaile
+
+COPY requirements1.txt ./
+
+COPY . .
+
+RUN pip install --no-cache-dir -r requirements1.txt
+
+ADD . /appZenbSortzaile.py
+
+CMD ["python", "./appZenbSortzaile.py"]
+
+
+

@@ -1,0 +1,30 @@
+version: "2"
+
+services:
+  appbatuketa:
+    build:
+        context: .
+        dockerfile: Dockerfile-appBatuketa
+    image: gcr.io/clusterekaitz/komunikaziojarduera:appBatuketa
+    networks:
+      - my-net
+    environment:
+      - FLASK_ENV=development
+    ports:
+      - 5001:5001
+    
+      
+  appzenbsortzaile:
+    build:
+        context: .
+        dockerfile: Dockerfile-appZenbSortzaile
+    image: gcr.io/clusterekaitz/komunikaziojarduera:appZenbSortzaile
+    networks:
+      - my-net
+    ports:
+      - 5000:5000 
+
+networks:
+  my-net:
+    driver: bridge
+  

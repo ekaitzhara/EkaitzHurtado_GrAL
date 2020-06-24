@@ -1,0 +1,30 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: /snap/kompose/1/./kompose-linux-amd64 convert -o yaml
+    kompose.version: 1.18.0 (06a2e56)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: appbatuketa
+  name: appbatuketa
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: appbatuketa
+    spec:
+      containers:
+      - env:
+        - name: FLASK_ENV
+          value: development
+        image: gcr.io/clusterekaitz/komunikaziojarduera:appBatuketa
+        name: appbatuketa
+        ports:
+        - containerPort: 5001
+        resources: {}
+      restartPolicy: Always
+status: {}

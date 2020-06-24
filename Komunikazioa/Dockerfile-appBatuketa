@@ -1,0 +1,17 @@
+FROM python:3.7.0-alpine3.8
+
+WORKDIR /home/pi/appBatuketa
+
+COPY requirements2.txt ./
+
+RUN pip install --no-cache-dir -r requirements2.txt
+
+COPY . .
+
+ENV FLASK_APP=appBatuketa.py
+ENV FLASK_RUN_PORT=5001
+
+CMD flask run --host=0.0.0.0
+
+
+
