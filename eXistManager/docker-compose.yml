@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+
+  exist:
+    image: existdb/existdb:latest
+    container_name: exist
+    ports:
+      - 8080:8080
+      - 8443:8443
+    networks:
+      - www
+
+  apptoput:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - www
+    ports:
+      - 6000:6000
+
+networks:
+  www:
+    driver: bridge
